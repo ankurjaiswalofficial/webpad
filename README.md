@@ -1,6 +1,6 @@
 # WebPad - A Modern Web-Based Code Editor
-
 WebPad is a powerful, web-based code editor built with Next.js that provides a seamless coding experience right in your browser. With features like real-time editing, file system access, and customizable settings, WebPad makes it easy to write and edit code from anywhere.
+<img src="image/image.png" width="300" />
 
 ## Features
 
@@ -81,6 +81,13 @@ src/
   ├── lib/          # Utility functions and helpers
   └── types/        # TypeScript type definitions
 ```
+
+## Project View
+- Light Mode
+![1743529292012](image/README/1743529292012.png)
+- Dark Mode
+![1743529336607](image/README/1743529336607.png)
+
 
 ### Built With
 - [Next.js](https://nextjs.org) - React framework

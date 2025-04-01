@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WebPad - A Modern Web-Based Code Editor
+
+WebPad is a powerful, web-based code editor built with Next.js that provides a seamless coding experience right in your browser. With features like real-time editing, file system access, and customizable settings, WebPad makes it easy to write and edit code from anywhere.
+
+## Features
+
+### Core Features
+- **Real-time Code Editing**: Powered by Monaco Editor (VS Code's editor)
+- **File System Access**: Direct integration with your local file system
+- **Auto-save**: Automatic saving of your work to prevent data loss
+- **Multiple Language Support**: Syntax highlighting for numerous programming languages
+- **Theme Support**: Light and dark themes for comfortable coding
+- **Customizable Interface**: Adjustable font size and font family
+- **Word and Character Count**: Real-time tracking of document statistics
+
+### Supported File Types
+WebPad supports a wide range of file types including:
+- JavaScript/TypeScript (js, jsx, ts, tsx)
+- Web Development (html, css, scss, less)
+- Markdown and Documentation (md, mdx, txt)
+- Programming Languages (python, ruby, java, c/c++, and more)
+- Configuration Files (json, yaml, toml)
+- Shell Scripts (sh, bash, powershell)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (version 18 or higher)
+- npm or yarn package manager
 
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ankurjaiswalofficial/webpad.git
+cd webpad
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage Guide
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Opening Files
+1. Click the "Open File" button in the toolbar
+2. Select a file from your local system
+3. The file will open in the editor with appropriate syntax highlighting
 
-## Learn More
+### Editor Settings
+- **Font Size**: Adjust using the slider in the toolbar
+- **Font Family**: Choose from available fonts in the dropdown
+- **Theme**: Toggle between light and dark themes
+- **Auto-save**: Enable/disable automatic saving
 
-To learn more about Next.js, take a look at the following resources:
+### Keyboard Shortcuts
+- `Ctrl/Cmd + S`: Save file
+- `Ctrl/Cmd + O`: Open file dialog
+- `Ctrl/Cmd + ,`: Open settings
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Project Structure
+```
+src/
+  ├── app/          # Next.js app directory
+  ├── components/   # React components
+  ├── hooks/        # Custom React hooks
+  ├── lib/          # Utility functions and helpers
+  └── types/        # TypeScript type definitions
+```
 
-## Deploy on Vercel
+### Built With
+- [Next.js](https://nextjs.org) - React framework
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/) - Code editor
+- [Radix UI](https://www.radix-ui.com/) - UI components
+- [Tailwind CSS](https://tailwindcss.com) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
